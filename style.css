@@ -20,6 +20,78 @@
     --text-color:#1a2428;
     --bg-color:#fff;
 }
+.header{
+    display:flex;
+    align-items:center;
+    padding:1rem;
+    background: linear-gradient(90deg, #f0148f, #4814f0);
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.logo {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+  }
+.logo img {
+    width: 50px; 
+    height: auto; 
+    display: block; 
+}
+#header-right {
+    display: flex;
+    align-items: center;
+}
+#header-left {
+    display: flex;
+    align-items: center;
+    
+}
+
+#menu-icon {
+    font-size: 2rem; 
+    cursor: pointer; 
+    z-index: 10001;
+    margin-left: 50px;
+   display:none;
+}
+.navbar a {
+    color: black; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    margin-right: 20px; 
+    display: inline-block; 
+}
+.navbar a:hover, .navbar .home-active{
+    background:#41575e;
+    border-radius: 5rem;
+    transition: background 0.5s ;
+
+}
+.site-name {
+    margin-left: 10px; 
+    font-size: 1.2rem; 
+    color: #000; 
+    font-weight: medium; 
+}
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor:pointer;
+
+}
+.profile img{
+    width: 40px;
+    height:40px;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.profile span{
+    font-size: 13px;
+    font-weight: 500;
+}
 img{
     width:100%;
 
