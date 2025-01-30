@@ -6,9 +6,13 @@
   <meta name="description" content="" />
   <title>Mines Bar</title>
   <link rel="stylesheet" href="style.css">
-  <!--Pour les icones-->
+  <!--Pour les icones Boxicons-->
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Link Swiper's CSS -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   
 </head>
 <body>
@@ -42,9 +46,122 @@
   </header>
 
   <!--HOME-->
-  <section class="home" id="home">
-    
+  <section class="home swiper" id="home">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="home-text">
+            <span>Tu as faim?</span>
+            <h1>On a plein de plats pour toi!!</h1>
+            <a href="#" class="btn">Shop Now <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+          <img src="https://i.pinimg.com/736x/c8/c5/c2/c8c5c24d242ab0f6da13593809d6f2ca.jpg" alt="food">
+        </div>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="home-text">
+            <span>Tu as faim?</span>
+            <h1>On a plein de plats pour toi!!</h1>
+            <a href="#" class="btn">Shop Now <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+          <img src="https://i.pinimg.com/736x/5e/62/eb/5e62eb93a14b03f1c190bde6ab0bfa2f.jpg" alt="Pasteries">
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="home-text">
+            <span>Tu as faim?</span>
+            <h1>On a plein de plats pour toi!!</h1>
+            <a href="#" class="btn">Shop Now <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+          <img src="https://kissmychef.com/wp-content/uploads/2020/07/%C2%A9-gni-normandie.jpg" alt="Boissons">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </section>
+  <!--Categories-->
+  <section class="categories" id="categories">
+      <div class="heading">
+        <h1>Discover Our Hottest <br><span>Categories</h1>
+        <a href="#" class="btn">See All <i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+      <div class="categories-container">
+        <!--Box1-->
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/19/24/4b/19244bd34528e1b9ba3874248a7c3df0.jpg" alt="boissons">
+          <h2>Drinks</h2>
+          <span>22 Items</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+        <!--Box2-->
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/c0/05/f1/c005f12867549656070006bf650579a2.jpg" alt="image">
+          <h2>Savory</h2>
+          <span>12 Items</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+        <!--Box3-->
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/6f/9e/6b/6f9e6b021e6219d20e33ce398c21bcc1.jpg" alt="image">
+          <h2>Dessert</h2>
+          <span>10 Items</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+        <!--Box4-->
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/cf/9b/af/cf9bafa8f904bb4c2aacf06cebf46331.jpg" alt="image">
+          <h2>Pasteries</h2>
+          <span>10 Items</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+        
+      </div>
+  </section>
+  <!--Products-->
+  <section class="products" id="products">
+    <div class="heading">
+      <h1>Our Popular <br><span>Products</h1>
+      <a href="#" class="btn">Shop Now <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+    <div class="products-container">
+      <!--Box1-->
+      <div class="box">
+        <img src="https://kissmychef.com/wp-content/uploads/2023/02/croissant.png" alt="">
+        <span>Croissant</span>
+        <h3 class="price">1.5€</h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+      </div>
+      <!--Box2-->
+      <div class="box">
+        <img src="https://as1.ftcdn.net/v2/jpg/04/10/92/18/1000_F_410921858_yvy2keTdx4MMTs7Cl1LnzuI9Nn2qsQ7h.jpg" alt="">
+        <span>Iced Coffee</span>
+        <h3 class="price">3.5€</h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+      </div>
+      <!--Box3-->
+      <div class="box">
+        <img src="https://cdn.chefclub.tools/uploads/recipes/cover-thumbnail/e26ad6b1-6f9e-47c9-9424-3b1c018a1650_UDbixB5.jpg" alt="">
+        <span>Choux</span>
+        <h3 class="price">1€</h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
